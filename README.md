@@ -39,13 +39,65 @@ Postgresql or simply postgres is a general purpose database management system us
 - Documentation lacks when compared to other popular DBMS
 
 REFERENCES
+
 https://www.quora.com/Is-PostgreSQL-a-distributed-and-scalable-database
+
 https://www.keycdn.com/blog/popular-databases
+
 https://www.quora.com/What-are-the-advantages-and-disadvantages-of-PostgreSQL
 
 
 # Q3 - Discuss the implementation of Agile project management methodology
-Agile project management is methodology for delivering projects based on iteration. Agile can also be considered a mindset that can respond to ever changing requirements of the project. Using the agile methodology also prioritises user feedback. It favours collaboration with the end user in order to direct the project and iterating based on the feedback. Agile teams focus on collaboration and communication in order to achieve the best results possible. Teams are encouraged to collaborate and iterate based on feedback from eachother as well as customers. In agile teams must establish an MVP(minimum viable product) 
+Agile project management is methodology for delivering projects based on iteration. Agile can also be considered a mindset that can respond to ever changing requirements of the project. Agile has become a popular mothodology worldwide for project management as there are numerous advantages to this approach. Firstly, agile is implemented using the scrum flow where teams deliver products in short cycles as opposed to one delivery at the end of a project. Agile is focused on user feedback. User feedback is essential in agile development as iterations are made to the product based on such feedback. The feedback is documented and placed in the backlog. Another advantage to using the agile approach is user stories. User stories give developers insight into client needs by putting the end user at the centre of feature development. User stories typically contain a brief description of the needs of the user for example - "as a user I should be able to register an account". After completing these features feedback from end client is tested to guage customer satisfaction. Agile can also be seen as a mindset where teams must have a flexible mindset in order to respond accordingly to changing demands of a project.
+
+REFERENCES
+
+https://www.visual-paradigm.com/guide/agile-software-development/what-is-user-story/
+
+https://www.guru99.com/waterfall-vs-agile.html
+
+
 
 # Q4 - Provide an overview and description of a standard source control workflow
 
+# Q 12- Identify and explain the workings of TWO sorting algorithms and discuss and compare their performance/efficiency (i.e. Big O) 300 - 500 words
+
+## Bubble sort
+
+Bubble sort or sinking sort is one of the oldest sorting algorithms in computer science. It works by comparing adjacent element and swaps them if needed. Bubble sort will iterate over a list repeatedly until the list is sorted. It gets its' name from the way the elements (small or large) "bubble" to the top. 
+
+**PROS**  
+- Under a best-case scenario bubble sort has a constant complexity of 0(n). 
+- Bubble sort has been used for many years and is easy to understand, therefore making it an attractive sorting method
+- Does not use large amounts of memory
+- Though considered inefficient compared with other sorting algorithms the difference is not significant for 100 items or less.
+
+
+**CONS**-
+- Bubble sort is considered to be the least efficient sorting algorithm when compared to other sorting algorithms and has a 0(n2) complexity in a worst-case scenario.
+
+REFERENCES
+
+https://study.com/academy/lesson/sorting-algorithm-comparison-strengths-weaknesses.html
+
+https://en.wikipedia.org/wiki/Bubble_sort
+
+https://en.wikipedia.org/wiki/Sorting_algorithm#Bubble_sort
+
+## Merge sort
+
+Merge sorting is another sorting algorithm that uses a divide-and-conquer method when sorting items. This is done by breaking down a list of items into sub-lists until there is only one element in each list and then merging all sub-lists into a single sorted list.
+
+**PROS**
+- Under a worst-case scenario merge sort has a complexity of 0(n log n) which makes it an efficient sorting algorithm when compared to others such as bubble sort.
+
+- can be efficiently applied for files of any size
+
+**CONS**
+- Requires more space than bubble sort as there needs to be space reserved for the sub-lists
+
+
+
+
+
+# Q 13- Identify and explain the workings of TWO search algorithms and discuss and compare their performance/efficiency (i.e. Big O) 300 - 500 words
