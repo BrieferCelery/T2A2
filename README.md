@@ -113,12 +113,35 @@ When searching an array binary search will divide the array in half. If the valu
 **PROS**
 - In a worst-case scenario binary search has a complexity of 0(log n) this makes it an efficient and scalable sorting algorithm 
 
-- 
+- Efficient for large datasets
 
 **CONS**
 - Although binary search is good for large datasets but performing binary search on linked lists will have the same time complexity as a linear search (0(n) in a worst-case scenario). This is because items in a linked list cannot be accessed in constant time.
 
 - For best implementation items should be sorted and random elements can be accessed in constant time.
 
+## Linear Search
+
+Linear search is very simple algorithm used to find an element in a list. A linear search algorithm will look for an element in a list by sequentially moving through the list. 
+
+**PROS**
+- Linear search has a 0(n) complexity and is good for small datasets
+- Linear search is very basic algorithm and easy to implement
+- Linear search is also memory efficient and doesn't require copying for memory allocation
+
+**CONS**
+- Not efficient when using large datasets
+- This algorithm scales linearly
+
 REFERENCES
 https://www.quora.com/Why-is-binary-search-not-possible-using-linked-list
+
+https://www.geeksforgeeks.org/binary-search/
+
+https://www.geeksforgeeks.org/linear-search/
+
+https://en.wikipedia.org/wiki/Linear_search
+
+https://en.wikipedia.org/wiki/Binary_search_algorithm#Binary_search_versus_other_schemes
+
+https://peterstratton.com/posts-output/2017-02-09-linear-search/
