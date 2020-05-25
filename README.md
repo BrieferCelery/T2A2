@@ -96,8 +96,29 @@ Merge sorting is another sorting algorithm that uses a divide-and-conquer method
 **CONS**
 - Requires more space than bubble sort as there needs to be space reserved for the sub-lists
 
+REFERENCES
 
+https://www.glassdoor.com/Interview/Pros-cons-of-merge-sort-and-quick-sort-QTN_1769819.htm
 
+https://www.quora.com/What-are-the-pros-and-cons-of-merge-sort
 
+https://study.com/academy/lesson/sorting-algorithm-comparison-strengths-weaknesses.html 
 
 # Q 13- Identify and explain the workings of TWO search algorithms and discuss and compare their performance/efficiency (i.e. Big O) 300 - 500 words
+
+## Binary Search
+
+When searching an array binary search will divide the array in half. If the value being searched for is higher than the middle value then the lower half is discarded and the top half is used to search for the value. The same is performed if the value is lower than the middle then the top half is discarded and only the lower half is searched. Finally, if the value is equal to the middle element then the middle index is returned. To best implement binary search typically two prerequisites must be met: the items should be in sorted order and random elements can be accessed in constant time.
+
+**PROS**
+- In a worst-case scenario binary search has a complexity of 0(log n) this makes it an efficient and scalable sorting algorithm 
+
+- 
+
+**CONS**
+- Although binary search is good for large datasets but performing binary search on linked lists will have the same time complexity as a linear search (0(n) in a worst-case scenario). This is because items in a linked list cannot be accessed in constant time.
+
+- For best implementation items should be sorted and random elements can be accessed in constant time.
+
+REFERENCES
+https://www.quora.com/Why-is-binary-search-not-possible-using-linked-list
