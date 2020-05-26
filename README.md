@@ -1,20 +1,23 @@
 ## Workbook - Aaron Kane
+
+_ACME Corporation is looking for devs with an understanding of Rails. The following set of questions relate to this RfQ-requirement._
+
 # Q1 - Describe the architecture of a typical Rails application
 
 Rails architecture follows the Model-View-Controller(MVC) design pattern where the major components of the application are organised into three layers in order to achieve a "separation of concerns". This separation of concerns increases the application's robustness and testability as each component has no knowledge of the other.
 
-## The model
+## The Model
 The model is the application's data structure and has no knowledge of the user interface. It handles the data logic for the rails application. The model layer communicates with the database and makes it available through the controller. The model is typically located in the app/model folder.
 
-## Controller
+## The Controller
 The controller layer is the mediator between the model and the view and controls the flow of the application. In a typical rails application the controller will query the database and organise it in order to pass it to the view.
 
-## view
+## The View
 The view represents the data to the user. In a rails application this is typically done with embedded ruby or haml. Rails views are typically located in the app/views folders.
 
 
 ## Diagram of a typical rails application
-![](rails_mvc.png)
+![](docs/rails_mvc.png)
 [link to image source](https://i.pinimg.com/originals/6e/f1/8d/6ef18dd3444ddb80c86ffb169bbd6e98.png)
 
 ### **Description of the above digram** - 
@@ -46,6 +49,7 @@ https://www.keycdn.com/blog/popular-databases
 
 https://www.quora.com/What-are-the-advantages-and-disadvantages-of-PostgreSQL
 
+_ACME Corporation is very big on project management, documentation and process. This will be a key metric in their decision to award the project. The following set of questions relate to this RfQ-requirement._
 
 # Q3 - Discuss the implementation of Agile project management methodology
 Agile project management is methodology for delivering projects based on iteration. Agile can also be considered a mindset that can respond to ever changing requirements of the project. Agile has become a popular mothodology worldwide for project management as there are numerous advantages to this approach. Firstly, agile is implemented using the scrum flow where teams deliver products in short cycles as opposed to one delivery at the end of a project. Agile is focused on user feedback. User feedback is essential in agile development as iterations are made to the product based on such feedback. The feedback is documented and placed in the backlog. Another advantage to using the agile approach is user stories. User stories give developers insight into client needs by putting the end user at the centre of feature development. User stories typically contain a brief description of the needs of the user for example - "as a user I should be able to register an account". After completing these features feedback from end client is tested to guage customer satisfaction. Agile can also be seen as a mindset where teams must have a flexible mindset in order to respond accordingly to changing demands of a project.
@@ -59,6 +63,42 @@ https://www.guru99.com/waterfall-vs-agile.html
 
 
 # Q4 - Provide an overview and description of a standard source control workflow
+
+Some popular Git workflows include basic, gitflow, feature branch workflow and integration-manager.
+
+Here the feature branch workflow will be discussed - 
+
+When implementing the feature branch workflow there should be one main branch typically called master with other branches pulling from it. It starts with all developers pulling from the master branch and creating a feature branch. This way changes will be committed to the feature branch while the master branch remains unaltered. When the developer has finished the feature a pull request is made. A pull request is an opportunity for the development team to discuss features in greater detail and once reviewed the feature branch can merge with the master branch. In most cases different features will be worked on simultaneously this can cause merge conflicts. To avoid merge conflicts, before submitting a pull request the developer must first pull from the master branch to have the lastest version of the project.
+
+![Feature-branch workflow](docs/feature-branch.png)
+[Link to image](https://buddy.works/blog/images/feature-branch.png)
+
+REFERENCES
+https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow
+
+https://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows
+
+
+
+# Q5 - Provide an overview and description of a standard software testing process (e.g. manual testing)
+
+_Having suffered several cyber attacks in the past and resultant remedial audits ACME Corporation takes compliance, security and privacy very seriously. The following set of questions relate to this RfQ-requirement._
+
+# Q6 - 	Discuss and analyse requirements related to information system security and how they relate to the project
+
+# Q7 - Discuss common methods of protecting information and data and how you would apply them to the project
+
+# Q8 - Research what your legal obligations are in relation to handling user data and how they can be met for the project
+
+_ACME Corporation has specifically requested the app to be based on a relational database. The next set of questions relate to this RfQ-requirement._
+
+# Q9 - Describe the structural aspects of the relational database model. Your description should include information about the structure in which data is stored and how relations are represented in that structure.
+
+# Q10 - Describe the integrity aspects of the relational database model. Your description should include information about the types of data integrity and how they can be enforced in a relational database.
+
+# Q11 - Describe the manipulative aspects of the relational database model. Your description should include information about the ways in which data is manipulated (added, removed, changed, and retrieved) in a relational database.
+
+_The efficiency of an app (i.e. site) and the algorithms used are of the utmost importance. The next set of questions relate to this RfQ-requirement._
 
 # Q 12- Identify and explain the workings of TWO sorting algorithms and discuss and compare their performance/efficiency (i.e. Big O) 300 - 500 words
 
@@ -145,3 +185,22 @@ https://en.wikipedia.org/wiki/Linear_search
 https://en.wikipedia.org/wiki/Binary_search_algorithm#Binary_search_versus_other_schemes
 
 https://peterstratton.com/posts-output/2017-02-09-linear-search/
+
+_Companies (including ACME Corporation) value previous project experience and case studies. The following set of questions relate to this RfQ-requirement._
+
+# Q14 - Conduct research into a marketplace website (app) and answer the following parts:  
+
+  a. List and describe the software used by the app.
+  
+  b. Describe the hardware used to host the app.
+
+  c. Describe the interaction of technologies within the app
+
+  d. Describe the way data is structured within the app
+
+  e. Identify entities which must be tracked by the app
+
+  f. Identify the relationships and associations between the entities you have 
+  identified in part (e)
+  
+  g. Design a schema using an Entity Relationship Diagram (ERD) appropriate for the database of this website (assuming a relational database model)
