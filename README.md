@@ -82,11 +82,89 @@ https://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows
 
 # Q5 - Provide an overview and description of a standard software testing process (e.g. manual testing)
 
+Software testing is an important aspect of developing applications. Testing is done to ensure the application works as expected. 
+
+There are various stages to manual testing - 
+
+* Unit testing
+
+This is done by isolating units of code and testing that they behave correctly. The "unit" can be as small as a method in a class, an object or the class itself. Unit testing can result in greater code reuse.
+
+* Integration Testing
+
+When unit testing is complete integration testing begins. Integration testing is performed when different components of the application are integrated together and tested. This is done to ensure the modules of the application work as expected.
+
+* System Testing
+
+Once integration testing is complete system testing can begin. This involves testing the application as a whole to make sure all components work together correctly. The testing includes functionality, performance, scalbility among other features of the whole application.
+
+* Acceptance Testing
+
+Acceptance testing is performed by the end user. Users will have different roles when testing the application (admin, user etc.) and perform the different tasks that come with the various priviledges. This is the last step before the software is approved for release. If acceptance testing passes the software can be released.
+
+
+REFERENCES
+
+https://www.guru99.com/manual-testing.html
+
+https://www.youtube.com/watch?v=xCwkjZcEK6w&feature=emb_title
+
+https://www.toolsqa.com/software-testing/manual-testing/
+
 _Having suffered several cyber attacks in the past and resultant remedial audits ACME Corporation takes compliance, security and privacy very seriously. The following set of questions relate to this RfQ-requirement._
 
 # Q6 - 	Discuss and analyse requirements related to information system security and how they relate to the project
 
+These are some basic requirements related to information system security - 
+
+**User access authentication and authorisation**
+
+Cyber attacks can occur if the proper steps are not taken with regards to user security. These attacks can compromise user data as well as the application. To avoid this there are certain steps that need to be followed. First, each user of the application must be uniquely identified. Each user should have the correct access permissions ie: Administrator. Provide training for users before granting access. Encrypt sensitive information of users such as password, bank details etc. 
+
+**Data backup**
+
+Cyber attacks can leave application data vulnerable to erasure. To avoid this a data recovery plan must be implemented to ensure this kind of attack is mitigated. To implement this, a plan must be developed and tested. The backups should also be encrypted. 
+
+**Use of third party vendors**
+
+In large applications it is common to utilise third party systems such as Stripe, Paypal, Facebook etc. for payment or identification purposes. Typically these vendors will handle sensitive user data. To ensure the application is secure it is important to stay up to date with these third party vendors security and compliance requirements. 
+
+REFERENCES
+
+https://safecomputing.umich.edu/information-security-requirements
+
+https://www.racgp.org.au/FSDEDEV/media/documents/Running%20a%20practice/Practice%20standards/Computer-and-information-security.pdf
+
 # Q7 - Discuss common methods of protecting information and data and how you would apply them to the project
+
+**Risk Assessments**
+
+As mentioned in the previous question data security is imperative when building an application. To secure data from both users and acme corp risk assessments on all data should performed. Examples of data that ACME must be very cautious about is user passwords, card details, senstive company information. Failure to this data can result in data vulnerability.
+
+**Backing up data**
+
+If data is lost due to a cyber attack one mitigation method that can be used it data backup. Backing up data should be done regularly. This can be costly for some companies but the benefits of mitigating data loss are much greater.
+
+**Encypting data**
+
+Important data such as ones previously mentioned must be encrypted. In case of an attack if the data is properly encrypted data vulnerability is minimised.
+
+**User access management**
+
+Managing user access to certain features/data is an effective way to protect important data. Users should only be granted access to information if they have the proper permissions. The less data is exposed to users the more secure the data will be.
+
+**Deleting data**
+
+Under new GDPR laws companies are obliged to delete data they do not need. Deleting senstive data properly ensures users that they can have their information removed if they do not want it there anymore.
+
+REFERENCES
+
+https://gdprinformer.com/gdpr-articles/6-essential-data-protection-methods
+
+https://safecomputing.umich.edu/information-security-requirements
+
+https://www.racgp.org.au/FSDEDEV/media/documents/Running%20a%20practice/Practice%20standards/Computer-and-information-security.pdf
+
 
 # Q8 - Research what your legal obligations are in relation to handling user data and how they can be met for the project
 
