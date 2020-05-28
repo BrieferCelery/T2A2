@@ -168,6 +168,30 @@ https://www.racgp.org.au/FSDEDEV/media/documents/Running%20a%20practice/Practice
 
 # Q8 - Research what your legal obligations are in relation to handling user data and how they can be met for the project
 
+In Australia the main legislation that companies must adhere to in relation to user data is The Privacy Act 1988. There is other general legislation that must be adhered to such as the Spam Act 2003, and Do Not Call Register Act 2006. Recently Australian businesses operating in Europe also have to adhere to the new General Data Privacy Regulations. These regulations mean that if ACME corp wants to continue to handle user data they must adhere to these regulations.
+
+**Personal Data**
+
+Companies must handle personal data in an open and transparent manner. They must listen to users complaints and reservations about their personal data.
+
+**Lawfully process user data**
+
+Any data processing must be done with consent of the user. Data must be stored securely and protect it from misuse or access by unauthorised entities.
+
+**Holding user data**
+
+User data must be deleted upon user request. Companies are also obligated to destroy data that there is no use for.
+
+**Giving user data to overseas entities**
+
+Unless given consent by the user companies giving user data to overseas enitities must ensure that the foreign entity is complying with Australian laws.
+
+REFERENCES
+
+https://iclg.com/practice-areas/data-protection-laws-and-regulations/australia
+
+https://www.oaic.gov.au/privacy/guidance-and-advice/australian-entities-and-the-eu-general-data-protection-regulation/
+
 _ACME Corporation has specifically requested the app to be based on a relational database. The next set of questions relate to this RfQ-requirement._
 
 # Q9 - Describe the structural aspects of the relational database model. Your description should include information about the structure in which data is stored and how relations are represented in that structure.
