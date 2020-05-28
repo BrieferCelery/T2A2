@@ -196,6 +196,42 @@ _ACME Corporation has specifically requested the app to be based on a relational
 
 # Q9 - Describe the structural aspects of the relational database model. Your description should include information about the structure in which data is stored and how relations are represented in that structure.
 
+A relational database consists of tables with columns and rows. Data is organised into these tables with related data linking the tables to eachother. Each record has a unique identifier known as a primary key each record can have only one primary key. To connect two tables together a foreign key is used. If a table has a foreign key in a column it must reference a primary key in another table. Foreign keys are an important aspect of a relational database as they establish the nature of relationships between tables. Below database relationships will be discussed.
+
+One-to-one: this relationships lets records relate to one other record in another table. For example - consider a customer and address tables in a database a customer can have one address thus making this a one-to-one relationship.
+
+![](docs/one-to-one.png)
+
+One-to-many: This relationship relates one record in a table to many records in another table. For example - consider a customer and orders table: a customer can have many orders but a single order cannot have many customers thus, making this a one-to-many relationship
+
+![](docs/one-to-many.png)
+
+Many-to-many: this relationship means that many records in a table can have a relationship with many records in another table. For example - consider a products and orders table. Many orders can contain many products and many products can be in many orders making this a many-to-many relationship.
+
+![](docs/many-to-many.png)
+
+REFERENCES
+
+https://www.lifewire.com/database-relationships-p2-1019758
+
+https://www.ibm.com/cloud/learn/relational-databases
+
+https://searchsqlserver.techtarget.com/definition/primary-key
+
+https://www.techopedia.com/definition/7272/foreign-key
+
+https://fmhelp.filemaker.com/help/18/fmp/en/index.html#page/FMP_Help%2Fone-to-many-relationships.html%23
+
+https://fmhelp.filemaker.com/help/18/fmp/en/FMP_Help/images/one-to-one.png
+
+https://fmhelp.filemaker.com/help/18/fmp/en/FMP_Help/images/one-to-many.png
+
+
+
+
+
+
+
 # Q10 - Describe the integrity aspects of the relational database model. Your description should include information about the types of data integrity and how they can be enforced in a relational database.
 
 # Q11 - Describe the manipulative aspects of the relational database model. Your description should include information about the ways in which data is manipulated (added, removed, changed, and retrieved) in a relational database.
