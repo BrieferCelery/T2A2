@@ -227,14 +227,42 @@ https://fmhelp.filemaker.com/help/18/fmp/en/FMP_Help/images/one-to-one.png
 https://fmhelp.filemaker.com/help/18/fmp/en/FMP_Help/images/one-to-many.png
 
 
-
-
-
-
-
 # Q10 - Describe the integrity aspects of the relational database model. Your description should include information about the types of data integrity and how they can be enforced in a relational database.
 
+## Data Integrity
+
+**Entity integrity** - Each record in a table must have a unique primary key. Two records cannot have the same primary key.
+
+**Referential Integrity** - if two tables have a relationship a foreign key must match a primary key in another table. If a foreign key does not match a primary key in another table this will result in an orphaned record.
+
+**Domain Integrity** - to maintain domain integrity it is important to select the appropriate data type for each column. Take for example the column `FIRST_NAME` an appropriate data type for this column would string or char. Constraints also help maintain data integrity such as limiting the number of characters allowed in a record.
+
+**User-defined Integrity** - allows a user to define custom rules that are not one of the above integrities.
+
+REFERENCES
+
+https://www.w3resource.com/sql/creating-and-maintaining-tables/creating-table-constraint.php
+
+https://database.guide/what-is-data-integrity/
+
+
 # Q11 - Describe the manipulative aspects of the relational database model. Your description should include information about the ways in which data is manipulated (added, removed, changed, and retrieved) in a relational database.
+
+Data manipulation refers to the data in a database itself rather than the structure of the database. Data manipulation language (DML) is a sub-language of the parent language such as SQL. Below the most common commands in DML will be discussed - 
+
+**`INSERT`**: the `INSERT` command inserts one or multiple data records into a table.
+
+**`SELECT`**: the select command will retrieves records from one or more tables in a database. `SELECT` is very flexible and can retrieve all records or none from multiple tables. 
+
+**`UPDATE`**: this command will update a record in the database. This command can change the data in multiple records. `UPDATE` does not add new rows to the tables but takes an existing record and change the data. 
+
+**`DELETE`**: this command will delete a single or multiple records in the database.
+
+REFERENCES
+
+https://www.simplilearn.com/data-manipulation-in-sql-tutorial
+
+https://www.webucator.com/tutorial/learn-sql/relational-database-basics.cfm
 
 _The efficiency of an app (i.e. site) and the algorithms used are of the utmost importance. The next set of questions relate to this RfQ-requirement._
 
