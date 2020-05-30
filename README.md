@@ -252,7 +252,7 @@ Data manipulation refers to the data in a database itself rather than the struct
 
 **`INSERT`**: the `INSERT` command inserts one or multiple data records into a table.
 
-**`SELECT`**: the select command will retrieves records from one or more tables in a database. `SELECT` is very flexible and can retrieve all records or none from multiple tables. 
+**`SELECT`**: the select command will retrieve records from one or more tables in a database. `SELECT` is very flexible and can retrieve all records or none from multiple tables. 
 
 **`UPDATE`**: this command will update a record in the database. This command can change the data in multiple records. `UPDATE` does not add new rows to the tables but takes an existing record and change the data. 
 
@@ -356,17 +356,57 @@ _Companies (including ACME Corporation) value previous project experience and ca
 
 # Q14 - Conduct research into a marketplace website (app) and answer the following parts:  
 
-  a. List and describe the software used by the app.
+[Uber](https://www.uber.com/au/en/)
+
+## a. List and describe the software used by the app.
+
+Hosting: Amazon Web Services
+
+Backend/Database: PostgreSQL, MySQL, MongoDB, Node.js, Amazon EC2, Go, Kafka, Backbone.js
+
+Frontend: React, Swift, Objective-C, Java, HTML5, CSS, Google Maps
+
+Payment: Paypal, Braintree
+
+Utility libraries/frameworks: Google Analytics, Elasticsearch, Ludwig, HackerOne, MixPanel
+
+DevOps: RequireJS, Grafana, Brunch, uberalls, Zap, M3, Makisu, Kraken by Uber, Puppet Labs, Jaeger, Zookeeper
+
+Software for business operations: Zendesk, Mattermost, OneLogin, iDoneThis, Delighted, G Suite, Asana
+
+## b. Describe the hardware used to host the app.
+
+Web servers, Data servers, payments servers, application servers. Uber will use its' worldwide partners to keep up with the large demands of the app. Uber uses Amazon Web Services to host their applications and AWS has its' own custom hardware that it uses to provide their hosting services.
+
+## c. Describe the interaction of technologies within the app
+
+Due to the variety of technologies Uber uses to provide its' service optimally, the techonolgies sometimes perform very niche tasks. On a macro level the technologies work together to connect a rider to a driver and calculate payment based on factors such as: distance, time, demand. The host provider(AWS) will serve the app to the user. The user provides a destination based on their location using Google Maps api. The data will then be sent to drivers within a certain proximity of the rider and the nearest driver to accept the ride will be connected to the rider. The fronted technologies that the rider will use are typically swift and android as this is primarily a modile app service. 
+
+## d. Describe the way data is structured within the app
+
+To a regular user ie someone who wants a ride only the data relevant to them is displayed. This consists of the user's current location as well as drivers within a certain location. User's can also view driver data such as car model, license plate, name and photo Id of the driver. Prices for a ride are calculated based on existing data such as destination, starting location, time and demand. This data is synthesised and shows the user the price before confirming the ride. Uber also keeps a log of all rides for legal purposes.
+
+## e. Identify entities which must be tracked by the app
+
+Important entities to keep track of - Driver location, user location(when in app), User information such as identification, payment information and past trips. Driver information is also important such as, bank details, identification, car model, license plate number. Finally, the details of the ride is very important for both the user and driver so a driver will know where to go and the user knows they are being taken to the correct location.
+
+## f. Identify the relationships and associations between the entities you have identified in part (e)
   
-  b. Describe the hardware used to host the app.
+User and driver: `has_one` current location. User and driver can only have one current location.
 
-  c. Describe the interaction of technologies within the app
+Driver and user: `has_many` Ride details. User and driver can have multiple rides and therefore multiple RideDetails. 
 
-  d. Describe the way data is structured within the app
+Ride Details: `has_one` rating. Each Ride can only have one rating.
 
-  e. Identify entities which must be tracked by the app
+## g. Design a schema using an Entity Relationship Diagram (ERD) appropriate for the database of this website (assuming a relational database model)
 
-  f. Identify the relationships and associations between the entities you have 
-  identified in part (e)
-  
-  g. Design a schema using an Entity Relationship Diagram (ERD) appropriate for the database of this website (assuming a relational database model)
+![](docs/UERD.png)
+
+REFERENCES
+
+https://stackshare.io/uber-technologies/uber/main
+
+https://builtwith.com/?https%3a%2f%2fwww.uber.com.au%2f
+
+https://www.quora.com/What-is-Ubers-server-architecture
+
